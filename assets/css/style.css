@@ -42,25 +42,7 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
-footer {
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
- footer h2 {
-     display: inline;
-     color: #024e76;
-     font-size: 30px;
-     margin: 0;
- }
- footer div {
-     float: right;
-     line-height: 1.5;
-     text-align: right;
- }
- footer a {
-     color: #024e76;
- }
+
  section {
      padding:60px;
  }
@@ -72,15 +54,30 @@ footer {
      background-position: center;
      position: relative;
  }
+ .hero-cta {
+     width: 35%;
+     text-align: right;
+     margin: 3.5%;
+     color: #fff;
+     font-size: 18px;
+     line-height: 1.3;
+ }
+ .hero-cta h2 {
+     font-style: italic;
+     font-size: 55px;
+     color: #fce138;
+ }
  .hero-form {
      background-color:#fce138;
+     width: 40%;
+     margin: 3.5%;
      padding: 20px;
-     width:500px;
      color: #024e76;
      border: 3px solid #024e76;
      position: absolute;
      bottom: 120px;
      right: 140px;
+     
  }
  .hero-form h3 {
      font-size: 25px;
@@ -97,6 +94,9 @@ footer {
      color: #024e76;
      width:100%;
      margin-bottom: 15px;
+     display: flex;
+     justify-content: ceneter;
+     flex-wrap: wrap;
  }
 .hero-form label {
     margin: 0 5px;
@@ -109,11 +109,12 @@ footer {
     font-size: 16px;
 }
  /* Hero styles end */
- .intro {
-     text-align:center;
+ .flex-row {
+     display:flex;
  }
 
  .intro p {
+     text-align: center;
      line-height: 1.7;
      color: #39a6b2;
      width: 80%;
@@ -121,17 +122,18 @@ footer {
      margin: 0 auto;
  }
  .steps {
-     text-align: center;
      background: #fce138;
  }
  
  .section-title {
+     padding-bottom: 20px;
+     text-align: center;
      font-size: 55px;
      color: #024e76;
-     margin-bottom: 35px;
-     padding: 0 100px 20px 100px;
-     display: inline-block;
      border-bottom: 3px solid;
+     margin: 0 auto 35px auto;
+     width: 50%
+     
  }
  .primary-border {
      border-color: #fce138;
@@ -139,28 +141,49 @@ footer {
  .secondary-border {
      border-color: #39a6b2
  }
- .steps div {
-     margin-bottom: 80px;
+ .step {
+     margin: 50px auto;
+     padding-bottom: 50px;
+     width:80%;
+     border-bottom: 1px solid #39a6b2;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content:space-between;
  }
- .steps img {
-     width: 15%;
-     margin: 10px 0;
- }
- .steps h3 {
+ 
+ .step h3 {
      color: #024e76;
      font-size:46px;
-     margin-top: 10px;
+     flex: 1 30%
  }
- .steps p {
+ .step-info {
+     flex: 2 70%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+ }
+ .step-img {
+     flex: 1 12%;
+     margin-right: 20px;
+ }
+ .step-img img {
+     max-width: 100%;
+ }
+ .step-text {
+     flex: 12;
+ }
+ .step-text p {
      color: #39a6b2;
-     font-size: 23px;
+     font-size: 18px;
  }
- .steps span {
-    font-size: 38px;
-}
-.trainers {
-    text-align: center;
-}
+ .step-text h4 {
+     font-size: 26px;
+     line-height: 1.5;
+     color: #024e76;
+ }
+
+
 .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
@@ -198,7 +221,7 @@ footer {
 }
 /* REACH OUT STYLES START */
 .contact {
-    text-align: center;
+    
     background-color: #024e76;
 }
 .contact h2 {
@@ -231,3 +254,25 @@ footer {
     color: #fce138;
     
 }
+footer {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+ footer h2 {
+     
+     color: #024e76;
+     font-size: 30px;
+     margin: 0;
+ }
+ footer div {
+     
+     line-height: 1.5;
+     
+ }
+ footer a {
+     color: #024e76;
+ }
