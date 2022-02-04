@@ -42,19 +42,20 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
-
- section {
-     padding:60px;
- }
+/* style all section tags */
+.section {
+    padding:60px;
+}
  /* Hero Style Start */
- .hero {
+.hero {
      background-image: url("../images/hero-bg.jpg");
-     height:600px;
      background-size: cover;
      background-position: center;
-     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
  }
- .hero-cta {
+.hero-cta {
      width: 35%;
      text-align: right;
      margin: 3.5%;
