@@ -43,9 +43,10 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 /* style all section tags */
-.section {
-    padding:60px;
+section {
+    padding: 60px;
 }
+
  /* Hero Style Start */
 .hero {
      background-image: url("../images/hero-bg.jpg");
@@ -68,23 +69,21 @@ header nav ul li a {
      font-size: 55px;
      color: #fce138;
  }
- .hero-form {
+.hero-form {
      background-color:#fce138;
      width: 40%;
      margin: 3.5%;
      padding: 20px;
      color: #024e76;
      border: 3px solid #024e76;
-     position: absolute;
-     bottom: 120px;
-     right: 140px;
+     
      
  }
- .hero-form h3 {
-     font-size: 25px;
+.hero-form h3 {
+     font-size: 24px;
      margin: 0;
  }
- .hero-form p{
+.hero-form p{
     margin: 5px 0 15px 0;
 }
  .form-input {
@@ -94,10 +93,7 @@ header nav ul li a {
      font-size: 16px;
      color: #024e76;
      width:100%;
-     margin-bottom: 15px;
-     display: flex;
-     justify-content: ceneter;
-     flex-wrap: wrap;
+     margin-bottom: 15px;    
  }
 .hero-form label {
     margin: 0 5px;
@@ -110,38 +106,49 @@ header nav ul li a {
     font-size: 16px;
 }
  /* Hero styles end */
+
  .flex-row {
      display:flex;
  }
+ /* SECTION TITLE STYLES END */
+ .section-title {
+    
+    text-align: center;
+    font-size: 55px;
+    color: #024e76;
+    padding-bottom: 20px;
+    border-bottom: 3px solid;
+    margin: 0 auto 35px auto;
+    width: 50%
+    
+}
+.primary-border {
+    border-color: #fce138;
+}
+.secondary-border {
+    border-color: #39a6b2
+}
+ /* SECTION TITLE STYLES END */
+
+ /* WHAT WE DO STYLE START */
 
  .intro p {
+    line-height: 1.7;
      text-align: center;
-     line-height: 1.7;
      color: #39a6b2;
      width: 80%;
-     font-size: 20px;
      margin: 0 auto;
+     font-size: 20px;
+    
  }
+ /* WHAT WE DO STYLE END */
+
+ /* WHAT YOU DO STYLE START */
  .steps {
      background: #fce138;
  }
  
- .section-title {
-     padding-bottom: 20px;
-     text-align: center;
-     font-size: 55px;
-     color: #024e76;
-     border-bottom: 3px solid;
-     margin: 0 auto 35px auto;
-     width: 50%
-     
- }
- .primary-border {
-     border-color: #fce138;
- }
- .secondary-border {
-     border-color: #39a6b2
- }
+ 
  .step {
      margin: 50px auto;
      padding-bottom: 50px;
@@ -183,6 +190,9 @@ header nav ul li a {
      line-height: 1.5;
      color: #024e76;
  }
+
+ /*WHAT YOU DO STYLE END */
+ /*MEET THE TRAINERS START */
 .trainers {
     width: 100%;
     margin: 0 auto;
