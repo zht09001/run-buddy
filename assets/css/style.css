@@ -13,36 +13,50 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 header h1 {
     font-weight: bold;
     font-size:36px;
     color:#fce138;
-    margin:0;  
+    margin:0;
+    display: inline;
+    
 }
 header a{
     text-decoration: none;
     color:#fce138;
 }
 header nav {
+    float: right;
     margin: 7px 0;
 }
-header nav ul  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;  
+header nav ul li {
+    display: inline;
 }
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 22px;
 }
-
+footer {
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+ footer h2 {
+     display: inline;
+     color: #024e76;
+     font-size: 30px;
+     margin: 0;
+ }
+ footer div {
+     float: right;
+     line-height: 1.5;
+     text-align: right;
+ }
+ footer a {
+     color: #024e76;
+ }
  section {
      padding:60px;
  }
@@ -54,30 +68,15 @@ header nav ul li a {
      background-position: center;
      position: relative;
  }
- .hero-cta {
-     width: 35%;
-     text-align: right;
-     margin: 3.5%;
-     color: #fff;
-     font-size: 18px;
-     line-height: 1.3;
- }
- .hero-cta h2 {
-     font-style: italic;
-     font-size: 55px;
-     color: #fce138;
- }
  .hero-form {
      background-color:#fce138;
-     width: 40%;
-     margin: 3.5%;
      padding: 20px;
+     width:500px;
      color: #024e76;
      border: 3px solid #024e76;
      position: absolute;
      bottom: 120px;
      right: 140px;
-     
  }
  .hero-form h3 {
      font-size: 25px;
@@ -94,9 +93,6 @@ header nav ul li a {
      color: #024e76;
      width:100%;
      margin-bottom: 15px;
-     display: flex;
-     justify-content: ceneter;
-     flex-wrap: wrap;
  }
 .hero-form label {
     margin: 0 5px;
@@ -109,12 +105,11 @@ header nav ul li a {
     font-size: 16px;
 }
  /* Hero styles end */
- .flex-row {
-     display:flex;
+ .intro {
+     text-align:center;
  }
 
  .intro p {
-     text-align: center;
      line-height: 1.7;
      color: #39a6b2;
      width: 80%;
@@ -122,18 +117,17 @@ header nav ul li a {
      margin: 0 auto;
  }
  .steps {
+     text-align: center;
      background: #fce138;
  }
  
  .section-title {
-     padding-bottom: 20px;
-     text-align: center;
      font-size: 55px;
      color: #024e76;
+     margin-bottom: 35px;
+     padding: 0 100px 20px 100px;
+     display: inline-block;
      border-bottom: 3px solid;
-     margin: 0 auto 35px auto;
-     width: 50%
-     
  }
  .primary-border {
      border-color: #fce138;
@@ -141,67 +135,43 @@ header nav ul li a {
  .secondary-border {
      border-color: #39a6b2
  }
- .step {
-     margin: 50px auto;
-     padding-bottom: 50px;
-     width:80%;
-     border-bottom: 1px solid #39a6b2;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     justify-content:space-between;
+ .steps div {
+     margin-bottom: 80px;
  }
- 
- .step h3 {
+ .steps img {
+     width: 15%;
+     margin: 10px 0;
+ }
+ .steps h3 {
      color: #024e76;
      font-size:46px;
-     flex: 1 30%
+     margin-top: 10px;
  }
- .step-info {
-     flex: 2 70%;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
- }
- .step-img {
-     flex: 1 12%;
-     margin-right: 20px;
- }
- .step-img img {
-     max-width: 100%;
- }
- .step-text {
-     flex: 12;
- }
- .step-text p {
+ .steps p {
      color: #39a6b2;
-     font-size: 18px;
+     font-size: 23px;
  }
- .step-text h4 {
-     font-size: 26px;
-     line-height: 1.5;
-     color: #024e76;
- }
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+ .steps span {
+    font-size: 38px;
 }
-
+.trainers {
+    text-align: center;
+}
 .trainer {
-    margin: 20px;
-    flex: 1;
+    width: 900px;
+    margin: 0 auto 30px auto;
     background: #024e76;
-    color: #fce138;   
+    color: #fce138;
+    overflow: auto;
 }
 .trainer img {
-    width: 100%;
+    width: 35%;
+    float: left;
 }
 .trainer-bio {
-    line-height: 1.3;
-    padding: 25px;
+    padding: 35px;
+    float: left;
+    width: 65%
 }
 .text-left {
     text-align: left;
@@ -210,37 +180,36 @@ header nav ul li a {
     text-align: right;
 }
 .trainer-bio h3 {
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 .trainer-bio h4 {
     font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 26px;
+    margin-bottom: 25px;
 }
 .trainer-bio p {
     font-size: 17px;
+    line-height: 1.3;
 }
 /* REACH OUT STYLES START */
 .contact {
-    
+    text-align: center;
     background-color: #024e76;
 }
 .contact h2 {
     color:#fce138;
 }
-.contact-info {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.contact-info > * {
-    flex: 1;
-    margin: 15px;
-}
 .contact-info iframe {
+    width: 400px;
     height:400px;
 }
 .contact-info div {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
     color: white;
 }
 .contact-info h3 {
@@ -250,51 +219,11 @@ header nav ul li a {
 .contact-info p, .contact-info address {
     margin:20px 0;
     line-height:1.5;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
 }
 
 .contact-info a {
-    color: #fce138;   
+    color: #fce138;
+    
 }
-.contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: #024e76;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px
-}
-.contact-form button {
-    width: 100%;
-    border: none;
-    background: #fce138;
-    color: #024e76;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-}
-footer {
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    background: #fce138;
-    width: 100%;
-    padding: 40px 35px;
-}
- footer h2 {
-     
-     color: #024e76;
-     font-size: 30px;
-     margin: 0;
- }
- footer div {
-     
-     line-height: 1.5;
-     
- }
- footer a {
-     color: #024e76;
- }
